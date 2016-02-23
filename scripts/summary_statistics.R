@@ -14,10 +14,10 @@ library(dplyr)
 
 summarise_data <- function(data) {
   
-  # 1) Modify all the column names so they aren't as verbose 
+  # 1) Modify all the column names so they aren't as verbose
   # Columns are grouped into 3 categories based on what the column entails
   colnames(data) <- c(
-    #_____Category 1: Class & Major & OS________________________
+    #_____Category 1: Class & Major & OS________________________    
     "Class_standing",      # What is your current class standing
     "Interested_in_major", # Are you interested in applying to the Informatics major?
     "OS",                  # Operating system
