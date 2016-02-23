@@ -37,6 +37,7 @@ library(dplyr)
 
 #Read in data (the file in data/ wasn't made public so that won't work)
 data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
+setwd("C:/Users/jonje/documents/info498f/a7-collaborative-coding")
 
 #____________________________________
 #1) Summary statistics
@@ -73,8 +74,8 @@ All students put together had visited a total of `r sl$total_countries_visited` 
 #____________________________________
 #2) Charting function 1
 
-# [insert source("scripts/filename") here]
-# [function from that file goes here]
+function1 <- source("C:/Users/jonje/documents/info498f/a7-collaborative-coding/scripts/chart1.R")
+function1(data)
 
 
 
