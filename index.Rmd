@@ -84,7 +84,11 @@ All students put together had visited a total of `r sl$total_countries_visited` 
 # [insert source("scripts/filename") here]
 # [function from that file goes here]
 
-
+# Grouped Bar Plot
+# Simple Bar Plot 
+counts <- table(data$What.is.your.current.class.standing.)
+barplot(counts, main="Class Standing in Info 498f", 
+  	xlab="Class Standing", col=c("darkblue","red", "yellow", "green")
 
 
 
