@@ -1,43 +1,26 @@
-Jacob Burke, Jon Jewik, Kush Gupta, Michael Lew
-
-Info498f
-
-Assignment 7: Collaborative Coding
-
 ---
 title: "Assignment 7: Intro Survey Data Analysis"
 output: html_document
 ---
 
+Michael Lew - Summary statistics, HTML page
 
+Jacob Burke - Charting function 2
 
+Jon Jewik - Charting function 1
 
+Kush Gupta - Charting function 2
 
+Info498f
 
-
-
-
-
-[intro paragraph goes here, tell what the stuff below does]
-
-
-
-
-
-
-
-
-
-
+Assignment 7: Collaborative Coding
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
-library(jsonlite)
 library(plotly)
 library(dplyr)
 
 #Read in data (the file in data/ wasn't made public so that won't work)
 data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
-setwd("C:/Users/jonje/documents/info498f/a7-collaborative-coding")
 
 #____________________________________
 #1) Summary statistics
@@ -69,27 +52,23 @@ Of `r sl$students_enrolled` people enrolled in INFO498F, `r sl$class_standing1` 
 
 All students put together had visited a total of `r sl$total_countries_visited` countries (not exclusive); each student has visited an average of `r sl$average_countries_visited` countries.
 
+#Scatter Plot & Bar Plot
+
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
 
 #____________________________________
 #2) Charting function 1
 
-function1 <- source("C:/Users/jonje/documents/info498f/a7-collaborative-coding/scripts/chart1.R")
-function1(data)
-
-
+# Makes a scatter plot for number of countries visited
+source("scripts/chart1.R")
+Scatter_Plot(data)
 
 #____________________________________
 #3) Charting function 2
 
-# [insert source("scripts/filename") here]
-# [function from that file goes here]
-
-# Grouped Bar Plot
-# Simple Bar Plot 
-counts <- table(data$What.is.your.current.class.standing.)
-barplot(counts, main="Class Standing in Info 498f", 
-  	xlab="Class Standing", col=c("darkblue","red", "yellow", "green")
+# Bar plot for students in each class standing
+source("scripts/chart2.R")
+Bar_Plot(data)
 
 
 
