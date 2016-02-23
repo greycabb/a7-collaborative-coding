@@ -18,7 +18,6 @@ output: html_document
 
 
 
-
 [intro paragraph goes here, tell what the stuff below does]
 
 
@@ -67,7 +66,7 @@ Of `r sl$students_enrolled` people enrolled in INFO498F, `r sl$class_standing1` 
 
 `r sl$programming_experience1` enrolled students said that they had never coded before, `r sl$programming_experience2` said they had only experimented with code, `r sl$programming_experience3` had a moderate amount of programming experience, and `r sl$programming_experience4` had lots of programming experience.
 
-All students put together had visited a total of `r sl$total_countries_visited` (not exclusive); each student has visited an average of `r sl$average_countries_visited` countries.
+All students put together had visited a total of `r sl$total_countries_visited` countries (not exclusive); each student has visited an average of `r sl$average_countries_visited` countries.
 
 ```{r eval=TRUE, echo=FALSE, message=FALSE}
 

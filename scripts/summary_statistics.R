@@ -14,7 +14,7 @@ library(dplyr)
 
 summarise_data <- function(data) {
   
-  # 1) Modify all the column names so they aren't as verbose
+  # 1) Modify all the column names so they aren't as verbose 
   # Columns are grouped into 3 categories based on what the column entails
   colnames(data) <- c(
     #_____Category 1: Class & Major & OS________________________
