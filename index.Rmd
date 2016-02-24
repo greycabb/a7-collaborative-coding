@@ -55,6 +55,9 @@ All students together have visited `r summary[['total_countries_visited']]` coun
 ---
 ```{r, echo=FALSE, message=FALSE}
 # Rendering the second chart
+counts <- table(data$What.is.your.current.class.standing.)
+barplot(counts, main="Class Distribution", 
+  	xlab="Number of Students per class", col=c("darkblue","red", "yellow", "green"))
 
 # source('scripts/chart2.R')
 # bar_plot(data)
