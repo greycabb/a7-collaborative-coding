@@ -1,0 +1,61 @@
+# Assignment 7: Collaborative Coding
+
+----
+
+### INFO 498F
+
+##### Team members:
+
+    - Jacob Burke (Charting Function 2)
+    - Jon Jewik (Charting Function 1)
+    - Kush Gupta (index.Rmd file)
+    - Michael Lew (Summary Statistics)
+
+```{r, echo=FALSE, message=FALSE} 
+
+# Including Libraries
+library(plotly)
+library(dplyr)
+
+# Including the summary statistics script
+source('scripts/summary_statistics.R')
+
+# Reading data (in the form of a data.frame) from the source
+data <- read.csv("https://raw.githubusercontent.com/INFO-498F/a7-survey-data/master/intro_survey_data.csv")
+
+# Summarising the data
+summary <- summarise_data(data)
+
+```
+
+### Summary for INFO 498F Survey
+
+---
+
+Out of the `r summary[['students_enrolled']]` students enrolled into INFO 498F, `r summary[['class_standing1']]` were Freshmen, `r summary[['class_standing2']]` were Sophomores, `r summary[['class_standing3']]` were Juniors, and `r summary[['class_standing4']]` were Seniors. 
+
+When it comes to Programming experience, `r summary[['programming_experience1']]` students say they have no programming experience, `r summary[['programming_experience2']]` students say they have experimented a bit with simple programing, `r summary[['programming_experience3']]` students say they have moderate experience with some scripting language (Python, R, JavaScript, Java, etc.), and `r summary[['programming_experience4']]` students say they have a lot of experience with a scripting language.
+
+All students together have visited `r summary[['total_countries_visited']]` countries, which is about `r summary[['average_countries_visited']]` countries per student on an average.
+
+
+### Chart 1
+
+---
+```{r, echo=FALSE, message=FALSE}
+# Rendering the first chart 
+
+# source('scripts/chart1.R')
+# scatter_plot(data)
+
+```
+
+### Chart 2
+
+---
+```{r, echo=FALSE, message=FALSE}
+# Rendering the second chart
+
+# source('scripts/chart2.R')
+# bar_plot(data)
+```
