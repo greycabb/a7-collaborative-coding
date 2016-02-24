@@ -1,4 +1,3 @@
-#install.packages("plotly")
 library(plotly)
 
 Scatter_Plot <- function(data_frame) {
@@ -11,9 +10,10 @@ Scatter_Plot <- function(data_frame) {
   )
   
   countries_visited <- data_frame$How.many.countries.have.you.visited.in.your.life.
-  return(plot_ly(data_frame,
+  return((plot_ly(data_frame,
                  y = countries_visited,
                  mode = "markers")
   ) %>%
-    layout(xaxis = x, yaxis = y, title = "How many countries each student has visited")
+    layout(xaxis = x, yaxis = y, title = "How many countries each student has visited"))
 }
+

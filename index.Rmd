@@ -42,21 +42,30 @@ All students together have visited `r summary[['total_countries_visited']]` coun
 ### Chart 1
 
 ---
-```{r, echo=FALSE, message=FALSE}
-# Rendering the first chart 
 
-source('scripts/chart1.R')
+```{r eval=TRUE, echo=FALSE, message=FALSE}
+
+#____________________________________
+#2) Charting function 1
+
+# Makes a scatter plot for number of countries visited
+source("scripts/chart1.R")
 Scatter_Plot(data)
-
 ```
 
 ### Chart 2
 
 ---
-```{r, echo=FALSE, message=FALSE}
-# Rendering the second chart
 
-source('scripts/chart2.R')
+```{r eval=TRUE, echo=FALSE, message=FALSE}
+
+#____________________________________
+#3) Charting function 2
+
+# Bar plot for students in each class standing
+source("scripts/chart2.R")
 Bar_Graph(data)
+
+
 
 ```
